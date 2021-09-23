@@ -25,9 +25,9 @@ services:
     restart: always
     environment:
       MYSQL_DATABASE: main
-      MYSQL_USER: root
-      MYSQL_PASSWORD: root
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: __
+      MYSQL_PASSWORD: __
+      MYSQL_ROOT_PASSWORD: __
     volumes:
       - .dbdata:/var/lib/mysql
     ports:
