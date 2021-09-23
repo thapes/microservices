@@ -5,7 +5,9 @@ django.setup()
 
 from products.models import Product
 
-params = pika.URLParameters('amqps://qmxpmoar:Q8g9q5KVYTl5dI776J50IhE0HXwffIUV@cattle.rmq2.cloudamqp.com/qmxpmoar')
+url = os.environ['TOKEN']
+
+params = pika.URLParameters(url)
 
 connection = pika.BlockingConnection(params)
 
